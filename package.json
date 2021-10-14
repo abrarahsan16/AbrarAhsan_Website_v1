@@ -1,0 +1,36 @@
+{
+  "name": "abrarahsantemplive",
+  "version": "1.0.0",
+  "description": "Temporary Website for Abrar Ahsan",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{html,css,jsx,js}\"",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Abrar Ahsan",
+  "license": "ISC",
+  "keywords": [
+    "Personal_Website"
+  ],
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.0",
+    "breakpoints": "0.0.0",
+    "breakpoints.js": "^1.0.0",
+    "jquery": "^3.6.0",
+    "jquery.min.js": "^3.5.1",
+    "lodash": "^4.17.21",
+    "prettier": "^2.3.2"
+  },
+  "files": [
+    "src/css/*.css"
+  ],
+  "devDependencies": {
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  }
+}
