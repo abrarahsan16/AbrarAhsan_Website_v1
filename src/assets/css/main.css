@@ -3131,6 +3131,9 @@ button:disabled,
 
 .features article .image img {
   border-radius: 5px 5px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -1.2em;
   width: 100%;
 }
 
