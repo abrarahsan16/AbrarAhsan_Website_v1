@@ -3387,10 +3387,10 @@ button:disabled,
   -ms-justify-content: center;
   justify-content: center;
   pointer-events: none;
-  -moz-transition: opacity 0.35s ease, visibility 0.35s;
-  -webkit-transition: opacity 0.35s ease, visibility 0.35s;
-  -ms-transition: opacity 0.35s ease, visibility 0.35s;
-  transition: opacity 0.35s ease, visibility 0.35s;
+  -moz-transition: opacity 0.2s ease, visibility 0.2s;
+  -webkit-transition: opacity 0.2s ease, visibility 0.2s;
+  -ms-transition: opacity 0.2s ease, visibility 0.2s;
+  transition: opacity 0.2s ease, visibility 0.2s;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -3414,10 +3414,10 @@ button:disabled,
   -webkit-transform: translateY(0.5em);
   -ms-transform: translateY(0.5em);
   transform: translateY(0.5em);
-  -moz-transition: opacity 0.35s ease, -moz-transform 0.35s ease;
-  -webkit-transition: opacity 0.35s ease, -webkit-transform 0.35s ease;
-  -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  -moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  -ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   -webkit-overflow-scrolling: touch;
   background: #4c5c96;
   border-radius: 5px;
@@ -3518,9 +3518,10 @@ body.is-menu-visible #menu .inner {
 }
 
 #banner .inner {
-  margin: 0 auto;
+  margin: -5em auto;
   width: 55em;
   height: 15em;
+  margin-bottom: 3.5em;
 }
 
 #banner .logo {
@@ -3548,6 +3549,29 @@ body.is-menu-visible #menu .inner {
   width: 2.25em;
 }
 
+#banner h1 {
+  -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease,
+    -moz-filter 0.25s ease;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease,
+    -webkit-filter 0.25s ease;
+  -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease,
+    -ms-filter 0.25s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -moz-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  -moz-filter: blur(0);
+  -webkit-filter: blur(0);
+  -ms-filter: blur(0);
+  filter: blur(0);
+  opacity: 1;
+  font-size: 1em;
+}
 #banner h2 {
   -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease,
     -moz-filter 0.25s ease;
@@ -3662,6 +3686,17 @@ body.is-preload #banner .logo {
   opacity: 0;
 }
 
+body.is-preload #banner h1 {
+  opacity: 0;
+  -moz-transform: translateX(0.25em);
+  -webkit-transform: translateX(0.25em);
+  -ms-transform: translateX(0.25em);
+  transform: translateX(0.25em);
+  -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
 body.is-preload #banner h2 {
   opacity: 0;
   -moz-transform: translateX(0.25em);
@@ -3956,6 +3991,17 @@ body.is-preload #banner p {
 .wrapper.spotlight .image img {
   border-radius: 100%;
   width: 100%;
+}
+.wrapper.spotlight .imageLogo {
+  border-radius: 100%;
+  margin: 0 3em 2em 0;
+  width: 22em;
+  -ms-flex: 1;
+}
+.wrapper.spotlight .imageLogo img {
+  border-radius: 30%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .wrapper.spotlight .content {
