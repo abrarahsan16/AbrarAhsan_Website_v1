@@ -35,9 +35,9 @@
           <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="pages/career.html">Career</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/underconstruction.html">Projects</a></li>
             <li>
-              <a href="pages/extracurricular.html"
+              <a href="pages/underconstruction.html"
                 >Hobbies and Volunteer Work</a
               >
             </li>
@@ -84,24 +84,22 @@
               </p>
               <p>
                 I've had the privilege to be able to work in multiple industries
-                (aerospace, utilities, university research) as well as
+                (aerospace, utilities, research) as well as
                 student-design teams.
               </p>
               <p>Here are a few technologies I’ve been working with:</p>
-              <p>
-                <a href="" class="button small">Software</a>
-                <!-- Python, C, Java -->
-                <a href="" class="button small">Web</a>
-                <!-- React, Node.js, HTML5, SASS -->
-                <a href="" class="button small">Hardware & Robotics</a>
-                <!-- ROS, Gazebo, EAGLE, Intel ComputeStick, Jetson Nano, Raspberry Pi, Arduino -->
-                <a href="" class="button small">Power</a>
-                <!-- ETAP, Simulink, Simscape, Multisim, SCADA, CROW,  -->
-                <a href="" class="button small"
-                  >Data Analytics & Visualization</a
-                >
-                <!-- NumPy, Pandas, VBA, Tableau, Matplotlib -->
-              </p>
+              <div>
+                <span onclick="hideButtonContent('software')" class="button small">Software</span>
+                <p id='software' style="display:none">Python, C, Java</p>
+                <span onclick="hideButtonContent('web')" class="button small">Web</span>
+                <p id='web' style="display:none">React, Node.js, HTML5, SASS</p>
+                <span onclick="hideButtonContent('hardware')" class="button small">Hardware & Robotics</span>
+                <p id='hardware' style="display:none">ROS, Gazebo, EAGLE, Intel ComputeStick, Jetson Nano, Raspberry Pi, Arduino</p>
+                <span onclick="hideButtonContent('power')" class="button small">Power</span>
+                <p id='power' style="display:none">ETAP, Simulink, Simscape, Multisim, WS500, CROW</p>
+                <span onclick="hideButtonContent('data')" class="button small">Data Analytics & Visualization</span>
+                <p id='data' style="display:none">NumPy, Pandas, VBA, Tableau, Matplotlib</p>
+              </div>
             </div>
           </div>
         </section>
@@ -205,10 +203,7 @@
         <div class="inner">
           <h2 class="major">Get in touch</h2>
           <p>
-            Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-            Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-            egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-            in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+            If have any inquiries or would like to grab a coffee, feel free to contact me on any of the platforms below!
           </p>
           <ul class="contact">
             <li class="icon solid fa-home">
@@ -230,7 +225,7 @@
             </li>
           </ul>
           <ul class="copyright">
-            <li>&copy; Abrar Ahsan. All Rights Reserved 2021</li>
+            <li>&copy; Abrar Ahsan. All Rights Reserved 2022</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>
@@ -245,6 +240,22 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/TxtType.js"></script>
-    
+    <script>
+      function hideButtonContent(var1) {
+        arrOfButtons = ["software", "web", "hardware", "power", "data"];
+        for (let i = 0; i < arrOfButtons.length; i++) {
+          var y = document.getElementById(arrOfButtons[i]);
+          if (var1!=arrOfButtons[i]){
+          y.style.display = "none";
+        }
+        }
+        var x = document.getElementById(var1);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+  </script>
   </body>
 </html>
