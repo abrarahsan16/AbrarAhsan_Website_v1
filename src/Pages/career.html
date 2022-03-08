@@ -115,16 +115,18 @@
                   Developed shallow convolutional neural network (CNN) and
                   implemented on a neuromorphic vision sensor (SCAMP-5) for
                   navigation in corridor and racetrack settings using a Jetbot
-                  chassis.
-                </li>
-                <li>
-                  Image data was collected first from custom Gazebo worlds and
+                  chassis. Image data was collected from custom Gazebo worlds,
                   verified by running a turtlebot using other Gazebo worlds
-                  before implementing into the real world.
+                  before transfering into the real world
                 </li>
                 <li>
                   The performance of the SCAMP-5 was compared against the Jetson
                   Nano's CPU, CPU+GPU, as well as the Intel ComputeStick2 VPU.
+                </li>
+                <li>
+                  Ran multiple tests on performance of VIO techniques using
+                  SCAMP-5 against Intel D455 RGB-D camera. The ground truth was
+                  tracked using Vicon system.
                 </li>
               </ul>
 
@@ -133,7 +135,9 @@
               <h4>Programming Languages and Libraries:</h4>
               <p>Python, C/C++, OpenCV, Keras, NumPy</p>
               <h4>Robotic Chassis:</h4>
-              <p>Jetson Nano on a Jetbot</p>
+              <p>Jetson Nano on a Jetbot, Turtlebot Burger, Turtlebot Waffle</p>
+              <h4>Other Hardware:</h4>
+              <p>SCAMP-5, Intel ComputeStick 2, Intel Realsense D455, Vicon</p>
 
               <ul class="actions">
                 <!-- AnalogNavNet Website -->
@@ -177,7 +181,7 @@
               </p>
               <ul>
                 <li>
-                  Assisted engineers by performing outage assessmenets for
+                  Assisted engineers by performing outage assessments for
                   non-critical outages by going over electrical diagrams of
                   individual stations, documenting contextual information and
                   alerting for critical outages.
@@ -196,6 +200,10 @@
                   Consolidated data across multiple sources to reduce burden of
                   finding information across multiple files and reduce risk of
                   errors arising from limit changes.
+                </li>
+                <li>
+                  Implemented data-scrapping algorithm to create an internal
+                  database for comparing historical data with current trends.
                 </li>
                 <li>
                   Trained and supervised new interns by job-shadowing, assigning
